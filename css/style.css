@@ -1,0 +1,55 @@
+body {
+  margin: 0 auto;
+}
+.container {
+  background: rgb(185, 136, 165);
+  background: radial-gradient(
+    circle,
+    rgba(185, 136, 165, 1) 54%,
+    rgba(171, 126, 155, 1) 61%,
+    rgba(152, 35, 121, 1) 78%,
+    rgba(8, 7, 39, 1) 100%,
+    rgba(185, 136, 165, 1) 100%
+  );
+  max-width: 100%;
+  display: flex;
+
+  column-gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.divs {
+  border-radius: 3px;
+  border-style: double;
+  border-color: white;
+  margin-top: 15px;
+}
+
+.divs:hover {
+  animation: wiggle 2s linear infinite;
+  background-color: rgb(232, 225, 185);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+h3 {
+  color: rgb(65, 13, 90);
+  font-size: 16px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+@keyframes wiggle {
+  15% {
+    transform: rotateZ(-8deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
